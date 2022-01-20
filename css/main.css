@@ -179,18 +179,14 @@ body {
   background-color: transparent;
 }
 
-.button--close:hover .close-button-svg,
-.button--close:focus .close-button-svg {
+.button--close:hover .button__close-icon,
+.button--close:focus .button__close-icon {
   fill: #2196f3;
 }
 
 .button__close-icon {
   width: 11px;
   height: 11px;
-}
-
-.button__close-icon:hover, .button__close-icon:focus {
-  fill: #2196f3;
 }
 
 /* Header */

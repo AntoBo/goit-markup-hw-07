@@ -87,8 +87,8 @@
   cursor: pointer;
   background-color: transparent;
 
-  &:hover .close-button-svg,
-  &:focus .close-button-svg {
+  &:hover .button__close-icon,
+  &:focus .button__close-icon {
     fill: $color-accent;
   }
 }
@@ -96,8 +96,4 @@
 .button__close-icon {
   width: 11px;
   height: 11px;
-  &:hover,
-  &:focus {
-    fill: $color-accent;
-  }
 }
