@@ -9,10 +9,12 @@ body {
 
 .link {
   text-decoration: none;
+
+  &:focus-visible {
+    outline: none;
+  }
 }
-.link:focus-visible {
-  outline: none;
-}
+
 .list {
   list-style: none;
   fill: $text-color-main;
@@ -38,10 +40,10 @@ body {
 
 .input {
   outline: none;
-}
 
-.input:hover,
-.input:focus,
-.input:not(:placeholder-shown) {
-  border: 1px solid $color-accent;
+  &:hover,
+  &:focus,
+  &:not(:placeholder-shown) {
+    border: 1px solid $color-accent;
+  }
 }

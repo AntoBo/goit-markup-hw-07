@@ -6,9 +6,9 @@
 
 .occupation__item {
   position: relative;
-}
-.occupation__item:not(:last-child) {
-  margin-right: 30px;
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 .occupation__title {

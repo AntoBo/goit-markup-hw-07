@@ -15,10 +15,10 @@
 
 .footer-socials {
   margin-left: 70px;
-}
 
-.footer-socials__item:not(:last-child) {
-  margin-right: 10px;
+  &__item:not(:last-child) {
+    margin-right: 10px;
+  }
 }
 
 .footer-subscribe {
@@ -38,6 +38,11 @@
   font-size: 16px;
   line-height: 1.25;
   color: $text-color-white-transparent;
+
+  .footer-subscribe__input:focus + &,
+  .footer-subscribe__input:not(:placeholder-shown) + & {
+    color: transparent;
+  }
 }
 
 .footer-socials__cta,
@@ -64,11 +69,6 @@
   font-size: 16px;
 }
 
-.footer-subscribe__input:focus + .footer-subscribe__label,
-.footer-subscribe__input:not(:placeholder-shown) + .footer-subscribe__label {
-  color: transparent;
-}
-
 .footer-socials__link {
   width: 44px;
   height: 44px;
@@ -79,10 +79,11 @@
 
   background-color: $footer-socials-bg;
   border-radius: 50%;
-}
-.footer-socials__link:hover,
-.footer-socials__link:focus {
-  background-color: $color-accent;
+
+  &:hover,
+  &:focus {
+    background-color: $color-accent;
+  }
 }
 
 .footer-socials__icon {
@@ -103,6 +104,11 @@
 .footer-address__link {
   color: $text-color-white-transparent;
   font-style: normal;
+
+  &:hover,
+  &:focus {
+    color: $color-accent;
+  }
 }
 
 .logo--footer {
@@ -111,9 +117,4 @@
 
 .footer-address__link--map {
   color: $color-white;
-}
-
-.footer-address__link:hover,
-.footer-address__link:focus {
-  color: $color-accent;
 }

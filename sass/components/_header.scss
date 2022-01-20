@@ -54,6 +54,10 @@
   letter-spacing: 0.02em;
 }
 
+.header__contacts-link {
+  color: $text-color-main;
+}
+
 .header__nav-link--current::after {
   content: '';
   position: absolute;
@@ -65,10 +69,6 @@
 
   background-color: $color-accent;
   border-radius: 4px;
-}
-
-.header__contacts-link {
-  color: $text-color-main;
 }
 
 .header__nav-link:hover,

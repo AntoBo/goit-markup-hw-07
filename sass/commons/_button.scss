@@ -12,40 +12,44 @@
   line-height: 1.62;
   background-color: $bg-color-inactive;
   cursor: pointer;
-}
-.button:focus-visible {
-  outline: none;
-}
 
-.button:hover,
-.button:focus,
-.button--hero,
-.button--footer-submit,
-.button--modal-submit {
-  color: $color-white;
-  background-color: $color-accent;
-}
-
-.button--hero,
-.button--footer-submit {
-  height: 50px;
-}
-
-.button--hero {
-  padding: 10px 32px;
-  min-width: 200px;
-}
-
-.button--footer-submit {
-  display: inline-flex;
-  align-items: center;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  &:hover,
+  &:focus {
+    color: $color-white;
+    background-color: $color-accent;
+  }
+  &:focus-visible {
+    outline: none;
+  }
 }
 
 .button--filter:hover,
 .button--filter:focus {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+.button--hero {
+  color: $color-white;
+  background-color: $color-accent;
+  padding: 10px 32px;
+  min-width: 200px;
+  height: 50px;
+}
+.button--footer-submit {
+  display: inline-flex;
+  align-items: center;
+  box-shadow: $button-shadow;
+  height: 50px;
+
+  color: $color-white;
+  background-color: $color-accent;
+}
+
+.button__icon-send {
+  width: 24px;
+  height: 24px;
+
+  margin-left: 10px;
 }
 
 .button--modal-submit {
@@ -56,11 +60,15 @@
   margin-left: auto;
   margin-right: auto;
 
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-}
-.button--modal-submit:hover,
-.button--modal-submit:focus {
-  background-color: $color-accent-darker;
+  box-shadow: $button-shadow;
+
+  color: $color-white;
+  background-color: $color-accent;
+
+  &:hover,
+  &:focus {
+    background-color: $color-accent-darker;
+  }
 }
 
 .button--close {
@@ -78,22 +86,18 @@
 
   cursor: pointer;
   background-color: transparent;
-}
-.button--close:hover .close-button-svg,
-.button--close:focus .close-button-svg {
-  fill: $color-accent;
-}
-.button__icon-send {
-  width: 24px;
-  height: 24px;
 
-  margin-left: 10px;
+  &:hover .close-button-svg,
+  &:focus .close-button-svg {
+    fill: $color-accent;
+  }
 }
+
 .button__close-icon {
   width: 11px;
   height: 11px;
-}
-.button__close-icon:hover,
-.button__close-icon:focus {
-  fill: $color-accent;
+  &:hover,
+  &:focus {
+    fill: $color-accent;
+  }
 }

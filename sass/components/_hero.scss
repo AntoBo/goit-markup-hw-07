@@ -5,7 +5,7 @@
   padding-top: 200px;
   padding-bottom: 200px;
   background-color: $bg-color-dark;
-  background-image: linear-gradient($gradient-color, $gradient-color) url('../images/hero.jpg');
+  background-image: linear-gradient($gradient-color, $gradient-color), url('../images/hero.jpg');
   text-align: center;
 }
 
