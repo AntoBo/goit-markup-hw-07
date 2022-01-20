@@ -1,0 +1,47 @@
+body {
+  background-color: $color-white;
+  color: $text-color-main;
+  font-family: Roboto, sans-serif;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  line-height: 1.71;
+}
+
+.link {
+  text-decoration: none;
+}
+.link:focus-visible {
+  outline: none;
+}
+.list {
+  list-style: none;
+  fill: $text-color-main;
+}
+
+.container {
+  width: 1200px;
+  /* outline: 2px dotted red; */
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.visually-hidden {
+  position: fixed;
+  transform: scale(0);
+}
+
+.animated {
+  transition-property: transform, opacity, box-shadow, color, fill, background-color, border-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.input {
+  outline: none;
+}
+
+.input:hover,
+.input:focus,
+.input:not(:placeholder-shown) {
+  border: 1px solid $color-accent;
+}

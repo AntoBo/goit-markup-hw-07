@@ -15,7 +15,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.6.0/modern-normalize.min.css"
     />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
     <!--Header-->
@@ -457,7 +457,6 @@
     </footer>
 
     <!-- Modal -->
-    <!-- add is-hidden! -->
     <div class="backdrop is-hidden animated" data-modal>
       <div class="modal animated">
         <p class="modal__title">Оставьте свои данные, мы вам перезвоним</p>
@@ -488,7 +487,7 @@
           <label class="modal__form-label">
             <span class="modal__form-name">Комментарий</span>
             <textarea
-              class="modal__input modal-comment animated"
+              class="modal__input modal__input--comment animated"
               name="comments"
               placeholder="Введите текст"
             ></textarea>
@@ -496,7 +495,7 @@
 
           <label class="modal__privacy">
             <input
-              class="input input-checkbox visually-hidden"
+              class="modal__checkbox input visually-hidden"
               type="checkbox"
               id="privacy"
               name="privacy"
