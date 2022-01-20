@@ -137,32 +137,37 @@ body {
   line-height: 1.19;
 }
 
-.logo-accent {
+.logo__accent {
   color: var(--color-accent);
 }
 
 /* Site nav */
 .header,
-.nav-main,
-.nav.pages,
-.nav.contacts {
+.header__nav-main,
+.header__nav-pages,
+.header__contacts {
   display: flex;
   align-items: center;
 }
 
-.nav.pages {
+.header__nav-pages {
   margin-left: 93px;
 }
 
-.nav.contacts {
+.header__contacts {
   margin-left: auto;
 }
 
-.nav > .item + .item {
+.header__nav-item + .header__nav-item {
   margin-left: 50px;
 }
 
-.nav .link {
+.header__contacts-item + .header__contacts-item {
+  margin-left: 30px;
+}
+
+.header__nav-link,
+.header__contacts-link {
   position: relative;
   display: block;
   padding: 32px 0;
@@ -173,7 +178,7 @@ body {
   letter-spacing: 0.02em;
 }
 
-.nav.pages .link.current::after {
+.header__nav-link--current::after {
   content: '';
   position: absolute;
   left: 0;
@@ -186,23 +191,25 @@ body {
   border-radius: 4px;
 }
 
-.nav.contacts .link {
+.header__contacts-link {
   color: var(--text-color-main);
 }
 
-.nav .link:hover,
-.nav .link:focus,
-.nav .link.current {
+.header__nav-link:hover,
+.header__nav-link:focus,
+.header__nav-link--current,
+.header__contacts-link:hover,
+.header__contacts-link:focus {
   color: var(--color-accent);
   fill: var(--color-accent);
 }
 
-.contacts-block .link {
+.header__contacts-link {
   display: flex;
   align-items: center;
 }
 
-.contacts-block-svg {
+.header__contacts-svg {
   margin-right: 10px;
 }
 
@@ -848,16 +855,3 @@ body {
 .close-button:focus .close-button-svg {
   fill: var(--color-accent);
 }
-
-/*
-
-план SASS 
-- переименовать классы в ВЕМ;
-- разбить на файлы и импортировать в мей.сасс: Variables, placeholders (вместо утилитарных классов типа ), 
-mixins?(то же самое что плейсхолдер, только с аргументами,
-components
-- переменные с var на $;
-- утилитные классы типа list, link, item в плейсхолдеры
-- псевдоклассы типа hover focus написать через вложенные &
-
-*/

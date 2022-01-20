@@ -2,7 +2,7 @@
     "version": 3,
     "mappings": "AAAA,AAAA,YAAY,AAAC,CACX,KAAK,CAAE,IAAI,CAKZ,AAHE,AAAD,kBAAO,AAAC,CACN,KAAK,CAAE,KAAK,CACb",
     "sources": [
-        "../../sass/main.scss"
+        "../sass/main.scss"
     ],
     "names": [],
     "file": "main.min.css"
