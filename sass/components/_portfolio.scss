@@ -47,10 +47,8 @@
 
 .portfolio__description {
   padding: 24px;
-  color: $color-white;
-  font-size: 18px;
-  line-height: 1.55;
-  font-weight: 400;
+
+  @include font-style(18px, 400, 1.55, null, $color-white);
 }
 
 .portfolio__link:hover,
@@ -75,17 +73,12 @@
 }
 .portfolio__title {
   margin-bottom: 4px;
-  color: $text-color-title;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 2;
-  letter-spacing: 0.06em;
+
+  @include font-style(18px, 700, 2, 0.06em, $text-color-title);
 }
 
 .portfolio__type {
-  color: $text-color-main;
-  font-size: 16px;
-  line-height: 1.87;
+  @include font-style(16px, null, 1.87, null, $text-color-main);
 }
 
 .portfolio__link {

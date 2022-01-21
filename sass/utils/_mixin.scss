@@ -1,3 +1,6 @@
+//USE
+//  @include font-style(16px, null, 1.26, null, $text-color-white-transparent);
+
 @mixin font-style($size: false, $weight: false, $lh: false, $ls: false, $colour: false) {
   @if $size {
     font-size: $size;

@@ -35,9 +35,7 @@
   top: 15px;
   left: 15px;
 
-  font-size: 16px;
-  line-height: 1.25;
-  color: $text-color-white-transparent;
+  @include font-style(16px, null, 1.26, null, $text-color-white-transparent);
 
   .footer-subscribe__input:focus + &,
   .footer-subscribe__input:not(:placeholder-shown) + & {
@@ -65,8 +63,7 @@
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
 
-  color: $color-white;
-  font-size: 16px;
+  @include font-style(16px, null, null, null, $color-white);
 }
 
 .footer-socials__link {

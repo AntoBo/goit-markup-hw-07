@@ -4,5 +4,3 @@
   аргументами, components
 
 - утилитные классы типа list, link, item в плейсхолдеры
-
-mixin fz

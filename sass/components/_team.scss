@@ -26,16 +26,13 @@
 
 .team__member-title {
   margin-bottom: 10px;
-  color: $text-color-title;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.19;
+
+  @include font-style(16px, 500, 1.19, null, $text-color-title);
 }
 .team__member-description {
   margin-bottom: 16px;
-  color: $text-color-main;
-  font-size: 16px;
-  line-height: 1.19;
+
+  @include font-style(16px, null, 1.19, null, $text-color-main);
 }
 
 .team__socials-list {

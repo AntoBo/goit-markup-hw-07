@@ -86,15 +86,15 @@ body {
 
 /* Buttons */
 .button {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.62;
+  color: #212121;
   display: inline-block;
   padding: 6px 22px;
   border-radius: 4px;
   border: none;
-  color: #212121;
   font-family: inherit;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.62;
   background-color: #f5f4fa;
   cursor: pointer;
 }
@@ -196,10 +196,10 @@ body {
 
 /* Logo */
 .logo {
-  color: #000000;
-  font-family: Raleway, cursive;
   font-size: 26px;
   line-height: 1.19;
+  color: #000000;
+  font-family: Raleway, cursive;
 }
 
 .logo__accent {
@@ -297,12 +297,12 @@ body {
 }
 
 .hero-title {
-  margin-bottom: 30px;
-  color: #ffffff;
-  font-weight: 900;
   font-size: 44px;
+  font-weight: 900;
   line-height: 1.36;
   letter-spacing: 0.06em;
+  color: #ffffff;
+  margin-bottom: 30px;
   text-transform: uppercase;
 }
 
@@ -336,11 +336,11 @@ body {
 }
 
 .features__title {
-  margin-bottom: 10px;
-  color: #212121;
   font-size: 14px;
-  text-transform: uppercase;
   line-height: 1.14;
+  color: #212121;
+  margin-bottom: 10px;
+  text-transform: uppercase;
 }
 
 .features__description {
@@ -368,12 +368,12 @@ body {
   left: 0;
   width: 370px;
   height: 70px;
-  color: #ffffff;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.19;
-  text-transform: uppercase;
   padding: 27px 0;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.19;
+  color: #ffffff;
+  text-transform: uppercase;
   text-align: center;
   background-color: rgba(47, 48, 58, 0.8);
 }
@@ -407,17 +407,17 @@ body {
 
 .team__member-title {
   margin-bottom: 10px;
-  color: #212121;
-  font-weight: 500;
   font-size: 16px;
+  font-weight: 500;
   line-height: 1.19;
+  color: #212121;
 }
 
 .team__member-description {
   margin-bottom: 16px;
-  color: #757575;
   font-size: 16px;
   line-height: 1.19;
+  color: #757575;
 }
 
 .team__socials-list {
@@ -550,7 +550,7 @@ body {
   top: 15px;
   left: 15px;
   font-size: 16px;
-  line-height: 1.25;
+  line-height: 1.26;
   color: rgba(255, 255, 255, 0.6);
 }
 
@@ -576,8 +576,8 @@ body {
   background-color: transparent;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
-  color: #ffffff;
   font-size: 16px;
+  color: #ffffff;
 }
 
 .footer-socials__link {
@@ -692,10 +692,10 @@ body {
 
 .portfolio__description {
   padding: 24px;
-  color: #ffffff;
   font-size: 18px;
-  line-height: 1.55;
   font-weight: 400;
+  line-height: 1.55;
+  color: #ffffff;
 }
 
 .portfolio__link:hover,
@@ -721,17 +721,17 @@ body {
 
 .portfolio__title {
   margin-bottom: 4px;
-  color: #212121;
-  font-weight: 700;
   font-size: 18px;
+  font-weight: 700;
   line-height: 2;
   letter-spacing: 0.06em;
+  color: #212121;
 }
 
 .portfolio__type {
-  color: #757575;
   font-size: 16px;
   line-height: 1.87;
+  color: #757575;
 }
 
 .portfolio__link {
@@ -770,11 +770,11 @@ body {
 }
 
 .modal__title {
-  font-weight: 600;
   font-size: 20px;
+  font-weight: 600;
   line-height: 1.15;
-  text-align: center;
   color: #212121;
+  text-align: center;
   margin-bottom: 12px;
 }
 

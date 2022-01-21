@@ -1,15 +1,12 @@
 /* Buttons */
 
 .button {
+  @include font-style(16px, 500, 1.62, null, $text-color-title);
   display: inline-block;
   padding: 6px 22px;
   border-radius: 4px;
   border: none;
-  color: $text-color-title;
   font-family: inherit;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.62;
   background-color: $bg-color-inactive;
   cursor: pointer;
 

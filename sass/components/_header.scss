@@ -7,10 +7,8 @@
 /* Logo */
 
 .logo {
-  color: $color-black;
+  @include font-style(26px, null, 1.19, null, $color-black);
   font-family: Raleway, cursive;
-  font-size: 26px;
-  line-height: 1.19;
 }
 
 .logo__accent {
